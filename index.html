@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Alarm Clock</title>
+</head>
+
+<body>
+    <div class="alarmContainer">
+        <img src="alarm-icon.png" class="alarm-icon" alt="Clock">
+        <div id="realtime"> 00:00:00 AM</div>
+        <form action="" class="alarm-input">
+            <select name="hours" id="hours">
+                <option value="Hour" selected hidden disabled>Hour</option>
+            </select>
+            <select name="mins" id="mins">
+                <option value="Minute" selected hidden disabled>Minute</option>
+            </select>
+            <select name="ampm" id="ampm">
+                <option value="AM/PM" selected hidden disabled>AM/PM</option>
+                <option value="AM">AM</option>
+                <option value="PM">PM</option>
+            </select>
+        </form>
+        <button type="submit" id="setAlarmbtn">Set Alarm</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

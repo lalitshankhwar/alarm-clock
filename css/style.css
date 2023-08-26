@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:#0d2957;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif!important;
+}
+
+.alarmContainer {
+  background-color: #fff;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+.alarm-icon{
+  width: 120px;
+}
+#realtime{
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.alarm-input{
+  margin-top: 1rem;
+}
+.alarm-input select{
+  font-family: 'Poppins', sans-serif!important;   
+  padding: 0.3rem;
+  font-size: 1rem;
+}
+
+.alarm-input.disable {
+  cursor: no-drop !important;
+}
+
+.alarm-input.disable select {
+  opacity: 0.7;
+  pointer-events: none;
+}
+#setAlarmbtn{
+  width: 100%;
+  border: none;
+  background-color: #0d2957;
+  color: white;
+  padding: 0.5rem 0;
+  font-family: 'Poppins', sans-serif!important;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+#setAlarmbtn:active{
+  transform: scale(0.9);
+}
+@media (max-width:320px){
+  .alarm-input select{
+    font-size: 0.8rem;
+  }
+}
